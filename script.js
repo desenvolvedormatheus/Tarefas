@@ -1,9 +1,8 @@
 // Adicionar tarefa
-const btnAdicionar = document.querySelector("#btnAdicionar")
-btnAdicionar.addEventListener("click", function(){
+document.querySelector("#btnAdicionar").addEventListener("click", function(){
     let entrada = document.querySelector("#tarefa").value
     if(entrada == ""){
-        alert("Tarefa vazia!")
+        alert("Tarefa nao pode estar vazia!")
     }else if(entrada[0] == " "){
         alert("Tarefa não pode começar com espaços em branco")
     }else{
@@ -41,7 +40,6 @@ lista.addEventListener("click", function(ev){
     ev.target.classList.toggle("concluida")
 })
 
-// Excluir tarefas de exemplo
 let itens = document.querySelectorAll('li')
 for (let i = 0; i < itens.length; i++) {
     let btnExcluir = document.createElement('button')

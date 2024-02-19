@@ -9,27 +9,24 @@
     <title>Tarefas Simples</title>
 </head>
 <body>
-    <header>
+  <main class="container">
+    <header class="cabecalho">
         <h1>Lista de Tarefas</h1>
     </header>
+    
+    <form class="formulario">
+        <input type="text" id="tarefa" autofocus>
+        <button type="button" id="btnAdicionar" >+</button>
+    </form>
 
-    <section>
-        <form>
-            <input type="text" id="tarefa" autofocus>
-            <button type="button" id="btnAdicionar" >Adicionar Tarefa</button>
-        </form>
-    </section>
-
-    <ul id="listaTarefas">
-        <li>ex: Correr</li>
-        <li>ex: Estudar JavaScript</li>
+    <ul id="listaTarefas" class="lista">
+        <li>Estudar</li>
     </ul>
 
-    <footer>
+    <footer class="rodape">
         <a href="https://wa.me/5511994108899?text=Ol%C3%A1%2C+vi+sua+lista+de+tarefas.." target="_blank"><i>Matheus P. Souza</i></a>
     </footer>
+    </main>
 	<script src="script.js"></script>
 </body>
 </html>
-
-<!-- Comentario de teste -->
